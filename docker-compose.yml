@@ -11,3 +11,8 @@ services:
       MYSQL_DATABASE: "science_development"
       MYSQL_USER: "science"
       MYSQL_PASSWORD: "science"
+  redis:
+    container_name: "science-redis"
+    image: "redis:6.2.7"
+    ports:
+      - "6379:6379"
