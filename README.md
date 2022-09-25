@@ -1,24 +1,7 @@
-# README
+# 실험장
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+github의 gem `scientist`를 이용한 리팩토링 실험
 
-Things you may want to cover:
+- `enabled?` 정리
+- `publish` 사용법
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
