@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  mysql:
+    container_name: "science-mysql"
+    image: "mysql:8.0-oracle"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "science_development"
+      MYSQL_USER: "science"
+      MYSQL_PASSWORD: "science"
