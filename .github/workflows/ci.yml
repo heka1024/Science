@@ -19,5 +19,4 @@ jobs:
       - name: List outdated minor versions
         run: |
           gem install bundler
-          bundle install
           bundle outdated --minor
