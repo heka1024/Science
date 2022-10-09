@@ -16,7 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: List outdated minor versions
+      - name: Install bundler
+        run: gem install bundler
+      - name: List outdated gems
         run: |
-          gem install bundler
-          bundle outdated --minor
+          bundle outdated --minor || true
