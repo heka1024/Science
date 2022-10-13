@@ -1,0 +1,7 @@
+{
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "vite": "^3.0.0",
+    "vite-plugin-ruby": "^3.1.0"
+  }
+}
