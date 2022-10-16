@@ -1,0 +1,6 @@
+<h1>Posts#index</h1>
+<div id="posts">
+  <%= turbo_frame_tag "posts", src: posts_path(format: :turbo_stream), loading: :lazy %>
+</div>
+
+<%= turbo_frame_tag "load_more", src: posts_path(format: :turbo_stream), loading: :lazy %>
