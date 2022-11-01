@@ -1,8 +1,7 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-<div id="posts">
-  <%= turbo_frame_tag "posts", src: posts_path(format: :turbo_stream), loading: :lazy %>
-</div>
+<h1> Hello, World! </h1>
 
-<%= turbo_frame_tag "load_more", src: posts_path(format: :turbo_stream), loading: :lazy %>
+<div class="container">
+  <%# turbo_frame_tag "posts" do %>
+    <%= render @posts %>
+  <%# end %>
+</div>

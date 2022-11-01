@@ -1,4 +1,9 @@
-<div>
-  <h3> <%= post.title %></h3>
-  <p> <%= post.content %></p>
-</div>
+<% turbo_frame_tag post do %>
+
+  <div>
+    <b> <%= post.title %></b>
+    <p> <%= post.content %></p>
+
+    <%= link_to "Show", post_path(post.id) %>
+  </div>
+<% end %>
