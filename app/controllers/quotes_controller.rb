@@ -42,4 +42,8 @@ class QuotesController < ApplicationController
   def set_quote
     @quote = Quote.find(params[:id])
   end
+
+  def quote_params
+    @_quote_params ||= params.require(:quote).permit(:name)
+  end
 end
