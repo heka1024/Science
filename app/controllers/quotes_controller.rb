@@ -2,7 +2,19 @@ class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
   def index
-    @quotes = Quote.ordered
+    @page = params[:page].to_i || 1
+
+    @quotes = Quote.ordered.page(@page)
+  end
+
+  def append
+    @page = params[:page].to_i || 1
+
+    @quotes = Quote.ordered.page(@page)
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
   end
 
   def show

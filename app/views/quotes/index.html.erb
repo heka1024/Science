@@ -11,4 +11,14 @@
   <%= turbo_frame_tag "quotes" do %>
     <%= render @quotes %>
   <% end %>
+
+  <%#= turbo_frame_tag "load_more_quote" do %>
+  <%# end %>
+  <%= turbo_frame_tag "load_more_quote" do %>
+    <%= button_to "Load more", append_quotes_path(page: @page + 1),
+      method: :post,
+      data: {turbo_frame: "load_more_quote"},
+      class: "btn btn--primary" %>
+  <% end %>
+
 </main>
