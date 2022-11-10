@@ -1,3 +1,16 @@
-<% turbo_frame_tag @post do %>
-  <%= render @post %>
-<% end %>
+<%= render partial: "posts/post", locals: {post: @post} %>
+
+<div data-controller="clipboard">
+  PIN: <input type="text" value="1234" data-clipboard-target="source" readonly>
+  <button data-action="clipboard#copy">Copy to Clipboard</button>
+</div>
+
+<div data-controller="slideshow">
+  <button data-action="slideshow#previous"> ← </button>
+  <button data-action="slideshow#next"> → </button>
+
+  <div data-slideshow-target="slide">🐵</div>
+  <div data-slideshow-target="slide">🙈</div>
+  <div data-slideshow-target="slide">🙉</div>
+  <div data-slideshow-target="slide">🙊</div>
+</div>
