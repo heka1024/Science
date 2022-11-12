@@ -1,9 +1,12 @@
-<%= turbo_stream.append "quotes" do %>
+<%= turbo_stream.update "quotes" do %>
   <%= render @quotes %>
 <% end %>
 <%= turbo_stream.update "load_more_quote" do %>
   <%= button_to "Load more", append_quotes_path(page: @page + 1),
     method: :post,
+    data: {turbo_frame: "load_more_quote"},
+    class: "btn btn--primary" %>
+  <%= link_to "Link", append_quotes_path(page: @page + 1),
     data: {turbo_frame: "load_more_quote"},
     class: "btn btn--primary" %>
 <% end %>

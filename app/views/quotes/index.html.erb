@@ -19,6 +19,9 @@
       method: :post,
       data: {turbo_frame: "load_more_quote"},
       class: "btn btn--primary" %>
+    <%= link_to "Link", append_quotes_path(page: @page + 1),
+      data: {controller: "link", action: "link#click"},
+      class: "btn btn--primary" %>
   <% end %>
 
 </main>
