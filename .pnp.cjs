@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@hotwired/stimulus", "npm:3.1.0"],\
             ["@hotwired/turbo", "npm:7.2.2"],\
+            ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.3"],\
             ["stimulus-vite-helpers", "npm:3.0.1"],\
             ["vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:3.1.8"],\
             ["vite-plugin-ruby", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:3.1.2"]\
@@ -131,6 +132,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.1"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tailwindcss/forms", [\
+        ["npm:0.5.3", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "npm:0.5.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.3", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-forms-virtual-7f8d04db7a/0/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.3"],\
+            ["@types/tailwindcss", null],\
+            ["mini-svg-data-uri", "npm:1.4.4"],\
+            ["tailwindcss", null]\
+          ],\
+          "packagePeers": [\
+            "@types/tailwindcss",\
+            "tailwindcss"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -264,7 +288,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-minipass", "npm:2.1.0"],\
             ["glob", "npm:8.0.3"],\
             ["infer-owner", "npm:1.0.4"],\
-            ["lru-cache", "npm:7.14.0"],\
+            ["lru-cache", "npm:7.14.1"],\
             ["minipass", "npm:3.3.5"],\
             ["minipass-collect", "npm:1.0.2"],\
             ["minipass-flush", "npm:1.0.5"],\
@@ -274,7 +298,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["promise-inflight", "virtual:4e2088ed0df52533102f445d7e7aeba6560b7effa0cabbc7cc20dd1e36a86dd838cc541de4414688f4ce3ec77b0ad5298cea6de581350d934ceb35c3e0fe3462#npm:1.0.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["ssri", "npm:9.0.1"],\
-            ["tar", "npm:6.1.11"],\
+            ["tar", "npm:6.1.12"],\
             ["unique-filename", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
@@ -950,10 +974,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.14.0", {\
-          "packageLocation": "./.yarn/cache/lru-cache-npm-7.14.0-354cf654ec-efdd329f2c.zip/node_modules/lru-cache/",\
+        ["npm:7.14.1", {\
+          "packageLocation": "./.yarn/cache/lru-cache-npm-7.14.1-d3ba9407b6-d72c6713c6.zip/node_modules/lru-cache/",\
           "packageDependencies": [\
-            ["lru-cache", "npm:7.14.0"]\
+            ["lru-cache", "npm:7.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -969,7 +993,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-proxy-agent", "npm:5.0.0"],\
             ["https-proxy-agent", "npm:5.0.1"],\
             ["is-lambda", "npm:1.0.1"],\
-            ["lru-cache", "npm:7.14.0"],\
+            ["lru-cache", "npm:7.14.1"],\
             ["minipass", "npm:3.3.5"],\
             ["minipass-collect", "npm:1.0.2"],\
             ["minipass-fetch", "npm:2.1.2"],\
@@ -999,6 +1023,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromatch", "npm:4.0.5"],\
             ["braces", "npm:3.0.2"],\
             ["picomatch", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mini-svg-data-uri", [\
+        ["npm:1.4.4", {\
+          "packageLocation": "./.yarn/cache/mini-svg-data-uri-npm-1.4.4-929f6f1119-997f1fbd8d.zip/node_modules/mini-svg-data-uri/",\
+          "packageDependencies": [\
+            ["mini-svg-data-uri", "npm:1.4.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1151,7 +1184,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npmlog", "npm:6.0.2"],\
             ["rimraf", "npm:3.0.2"],\
             ["semver", "npm:7.3.8"],\
-            ["tar", "npm:6.1.11"],\
+            ["tar", "npm:6.1.12"],\
             ["which", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
@@ -1359,6 +1392,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["root-workspace-0b6124", "workspace:."],\
             ["@hotwired/stimulus", "npm:3.1.0"],\
             ["@hotwired/turbo", "npm:7.2.2"],\
+            ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.3"],\
             ["stimulus-vite-helpers", "npm:3.0.1"],\
             ["vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:3.1.8"],\
             ["vite-plugin-ruby", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:3.1.2"]\
@@ -1524,10 +1558,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["tar", [\
-        ["npm:6.1.11", {\
-          "packageLocation": "./.yarn/cache/tar-npm-6.1.11-e6ac3cba9c-a04c07bb9e.zip/node_modules/tar/",\
+        ["npm:6.1.12", {\
+          "packageLocation": "./.yarn/cache/tar-npm-6.1.12-c7d6bb4891-49d72e4420.zip/node_modules/tar/",\
           "packageDependencies": [\
-            ["tar", "npm:6.1.11"],\
+            ["tar", "npm:6.1.12"],\
             ["chownr", "npm:2.0.0"],\
             ["fs-minipass", "npm:2.1.0"],\
             ["minipass", "npm:3.3.5"],\
