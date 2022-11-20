@@ -3,5 +3,6 @@ class MapsController < ApplicationController
   end
 
   def index
+    @points = Point.all
   end
 end
