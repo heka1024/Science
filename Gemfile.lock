@@ -94,6 +94,8 @@ GEM
       railties (>= 3.2)
     dry-cli (0.7.0)
     erubi (1.11.0)
+    faker (3.0.0)
+      i18n (>= 1.8.11, < 2)
     foreman (0.87.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -255,6 +257,7 @@ DEPENDENCIES
   capybara
   debug
   dotenv-rails
+  faker (~> 3.0)
   foreman
   jbuilder
   mysql2 (~> 0.5.3)
