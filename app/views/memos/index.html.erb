@@ -1,0 +1,30 @@
+<div class="min-h-screen flex" data-controller="memo">
+  <div class="flex-1 m-8">
+    <h1 class="text-4xl">Left Screen</h1>
+    <input
+      type="text"
+      data-memo-target="source"
+      data-action="change->memo#update"
+    >
+  </div>
+  <div class="flex-1 m-8">
+    <h1 class="text-4xl">미리보기 </h1>
+    <p class="mt-8 font-medium text-gray-500 text-sm sm:text-base dark:text-white">Today</p>
+    <div class="mt-2 px-6 py-4 bg-white rounded-lg shadow w-full">
+      <div class=" inline-flex items-center justify-between w-full">
+        <div class="inline-flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/763/763812.png"
+            alt="Training Icon" class="w-6 h-6 mr-3">
+          <h3 class="font-bold text-base text-gray-800">Training</h3>
+        </div>
+        <p class="text-xs text-gray-500">
+          2 min ago
+        </p>
+      </div>
+      <p class="mt-1 text-sm" data-memo-target="content">
+        Hey! Do you remember about choosing your training regime?
+      </p>
+    </div>
+  </div>
+</div>
