@@ -14,8 +14,13 @@ class MapController extends Controller {
   }
 
   loadMarkers() {
-    const markers = fetch("/maps.json")
+    fetch(this.fetchUrl)
       .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        this.lastId = data[data.length - 1].id
+        return data
+      })
       .then(data => data.map(({ latitude, longitude }) => this.buildMarker(latitude, longitude)))
       .then(markers => this.clusterer.addMarkers(markers))
 
@@ -27,6 +32,10 @@ class MapController extends Controller {
       //   return markers
       // })
       // .then(markers => this.clusterer.addMarkers(markers))
+  }
+
+  get fetchUrl() {
+    return (this.lastId === undefined) ? "/maps.json" : `/maps.json?last_id=${this.lastId}`;
   }
 
   buildMarker(latitude, longitude) {

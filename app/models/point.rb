@@ -1,4 +1,6 @@
 class Point < ApplicationRecord
+  default_scope { order(id: :desc) }
+
   def to_h
     {
       latitude: latitude,

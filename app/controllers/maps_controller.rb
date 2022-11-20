@@ -3,7 +3,12 @@ class MapsController < ApplicationController
   end
 
   def index
-    @points = Point.all.limit(10_000)
+    last_id = params[:last_id]&.to_i
+    @points = if last_id.nil?
+      Point.all.limit(1000)
+    else
+      Point.where('id < ?', last_id).limit(1000)
+    end
     respond_to do |format|
       format.html
       format.json { render json: list }
@@ -13,8 +18,9 @@ class MapsController < ApplicationController
   private
 
   def list
-    @points.pluck(:latitude, :longitude).map do |latitude, longitude|
+    @points.pluck(:latitude, :longitude, :id).map do |latitude, longitude, id|
       {
+        id: id,
         latitude: latitude,
         longitude: longitude
       }
