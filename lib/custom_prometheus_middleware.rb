@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CustomPrometheuesMiddleware
+class CustomPrometheusMiddleware
   def initialize(app)
     @app = app
   end
